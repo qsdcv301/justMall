@@ -58,7 +58,15 @@ header {
     display: flex;
     justify-content: space-between;
     padding: 5px;
+    z-index:3;
+    transform:scaleY(0);
+    transition: transform 500ms;
 }
+.subnavi .submenu{
+    transform:scaleY(1);
+}
+
+
 .submenu{
     display: flex;
     flex-direction: column;
