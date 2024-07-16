@@ -8,7 +8,8 @@
         git commit -m "내용"
             commit 축약버전입니다 커밋과 동시에 커밋내용을 적습니다
         git commit -am "내용" add와 commit을 동시에 하는 축약입니다 단 기존파일에서 수정된것만 가능합니다
-    
+    git push
+        origin에 담긴 내용을 깃 허브에 올립니다
 
 
 # justMall
