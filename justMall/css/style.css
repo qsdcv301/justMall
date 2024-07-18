@@ -151,7 +151,6 @@ aside img{
     justify-content: flex-start;
     flex-wrap: wrap;
     align-items: center;
-
 }
 .noticebox, .gallery{
     margin-left: 8px;
@@ -160,6 +159,7 @@ aside img{
     border: 1px solid #222328;
     border-bottom: none;
     line-height: 40px;
+    position: relative;
 }
 .gallery{
     background-color: #ededed;
@@ -180,6 +180,16 @@ aside img{
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
+}
+.noticebox::after{
+    content: "";
+    display: table;
+    width: 203%;
+    height: 1px;
+    background: #fff;
+    position: absolute;
+    top: 37px;
+    z-index: 3;
 }
 .msg:hover{
     background-color: #ededed;
@@ -239,6 +249,9 @@ text-decoration: none;
 }
 .imgbox img{
     width: 100%;
+}
+.imgbox:hover{
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
 /* footer */
 
