@@ -12,7 +12,11 @@ body {
     color: #222328;
     text-align: center;
 }
-
+a, p{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
 /* header */
 
 header {
@@ -70,7 +74,6 @@ nav{
     display: flex;
     justify-content: space-between;
     padding: 5px;
-    
 }
 .menubar:hover nav{
     transform:scaleY(1);
@@ -115,23 +118,26 @@ aside img{
     background-color: #444;
     position: absolute;
     left: 100px;
-    width: 300px;
+    width: 20%;
     height: 150px;
     opacity: 0.9;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-}
-
-.sidebox p{
     color: #ffffff;
     font-size: 30px;
     font-weight: 600;
     margin: 0;
     padding: 0;
+    padding-left: 40px;
     margin-left: 35px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
+
+
 
 .sidebox p:last-child{
     font-size: 40px;
@@ -274,7 +280,7 @@ footer > .logo img{
 }
 
 .copyright{
-    width: 70%;
+    width: 70%; 
 }
 
 .copyright p{
